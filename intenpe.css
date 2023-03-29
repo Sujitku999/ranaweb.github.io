@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://i.pinimg.com/originals/8c/43/64/8c43645fe8d0ac164a6925448be32858.jpg");
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+
+}
+
+
+.header{
+    z-index: 1000;
+    width: 100vw;
+    position:fixed;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(102,51,153,1); 
+    border-bottom: 3px solid black;
+    /* border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black; */
+    
+}
+.logo{
+    /* background: red; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logo img{
+    display: flex;;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.logo p{
+    font-family: cursive;
+    margin-left: 2px;
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    /* flex-direction: row; */
+}
+.menu ul{
+    display: flex;
+    list-style:none;
+    /* background:red; */
+}
+.menu ul li{
+    border: 1px solid black;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    margin: 20px;
+    padding:5px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.search{
+    margin: 20px;
+    /* background: aqua; */
+    position: relative;
+}
+.search #find{
+    height: 40px;
+    width: 790px;
+    border-radius: 13px;
+}
+.search #find[type="search"]{
+    padding-left:40px;
+}
+.search #mag{
+    border: 0px;
+    left: 10px;
+    top:9px;
+    position: absolute;
+    border-color: black;
+    cursor: pointer;
+}
+.search #mic{
+  border:none;  
+  top:8px;  
+  right: 10px;
+  position: absolute;
+  cursor: pointer;   
+}
+/* .search #find::-ms-clear {
+    display: none;
+  }
+  .search #find::-ms-reveal {
+    display: none;
+  } */
+  .search #find::-webkit-search-cancel-button {
+    position: relative;
+    right: 50px;
+    margin-right: -18px;
+    margin-top: -1px;
+    height: 18px;
+    width: 18px;
+    /* background-image: url('photo.jpg'); */
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    /* border: none; */
+    /* border-right: 3px solid black ; */
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: rgba(20, 20, 21, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.calculator{
+    background: #112b51;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2) ;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.867);
+    cursor: pointer;
+    margin: 10px;
+}
+form .display .textinput{
+    background: #fff;
+}
+ form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equal{
+    width: 145px;
+}
+form input.colour{
+    color: rgba(12, 178, 211, 0.907);
+}
+
